@@ -52,11 +52,11 @@ export class BbsBlsSignature2020 extends suites.LinkedDataProof {
     }
     super({
       type:
-        "https://w3c-ccg.github.io/ldp-bbs2020/context/v1#BbsBlsSignature2020"
+        "https://w3id.org/security#BbsBlsSignature2020"
     });
 
     this.proof = {
-      "@context": "https://w3c-ccg.github.io/ldp-bbs2020/context/v1",
+      "@context": "https://w3id.org/security/v3-unstable",
       type: "BbsBlsSignature2020"
     };
 
