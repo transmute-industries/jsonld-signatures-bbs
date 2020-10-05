@@ -89,8 +89,7 @@ describe("BbsBlsSignatureProof2020", () => {
       testRevealDocument,
       {
         suite: new BbsBlsSignatureProof2020(),
-        documentLoader: customLoader,
-        skipProofCompaction: false
+        documentLoader: customLoader
       }
     );
 

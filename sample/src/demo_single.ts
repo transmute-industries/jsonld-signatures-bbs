@@ -72,7 +72,7 @@ const main = async (): Promise<void> => {
   console.log(JSON.stringify(inputDocument, null, 2));
 
   //Verify the proof
-  let verified = await verify(inputDocument, {
+  let verified = await verify(signedDocument, {
     suite: new BbsBlsSignature2020(),
     purpose: new purposes.AssertionProofPurpose(),
     documentLoader
@@ -82,7 +82,7 @@ const main = async (): Promise<void> => {
   console.log(JSON.stringify(verified, null, 2));
 
   //Derive a proof
-  const derivedProof = await deriveProof(inputDocument, revealDocument, {
+  const derivedProof = await deriveProof(signedDocument, revealDocument, {
     suite: new BbsBlsSignatureProof2020(),
     documentLoader
   });
